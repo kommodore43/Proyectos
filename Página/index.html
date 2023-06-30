@@ -1,14 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<title>
+  Confesiones CSME Ovalle
+</title>
+<style type="text/css">
+  body {
+    color: purple;
+    background-color: rgb(235, 235, 5);
+  }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confesiones CSME Ovalle</title>
-</head>
+  #seccion1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .imagen img {
+    height: 140px;
+  }
+
+  .confesion {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .pepe {
+    font-family: monospace;
+    text-align: center;
+    text-decoration-line: overline;
+    text-rendering: optimizeSpeed;
+    font-size: 40px
+  }
+
+  .advertencia {
+    font-family: inherit;
+    text-align: center;
+    font-size: large;
+    text-emphasis: 'x' red
+  }
+</style>
+<script>
+  console.log('hola, soy el creador de la pagina wuajaj //// Contacto: kommodore#6517 Discord')
+  function validarFormulario() {
+    var mensaje = document.getElementById("mensaje").value.trim();
+
+    if (mensaje === "") {
+      alert("Necesitas colocar una confesion");
+      return false; // Evita el envío del formulario si el mensaje está vacío
+    }
+
+    return true; // Permite el envío del formulario si el mensaje no está vacío
+  }
+</script>
 
 <body>
-
+  <section id="seccion1">
+    <h1>Bienvenidos!</h1>
+  </section>
+  <section class="confesion">
+    Coloca tus confesiones aqui!
+    <section>
+      <div class="imagen">
+        <img src="https://www.colegiosantamariaeufrasia.cl/images/logo_solo_colegio_ovalle.svg">
+      </div>
+      <form action="hola.html" onsubmit="return validarformulario()">
+        <input type="text" placeholder="Ingresa tu confesion" id="mensaje" required>
+        <input type="submit" value="Enviar">
+      </form>
+      <div class="pepe">
+        <h1>Confesiones 100% anonimas</h1>
+      </div>
+      <div class="advertencia">
+        <h1>Esta prohibido publicar comentarios de odio u hirientes</h1>
+      </div>
 </body>
 
 </html>
